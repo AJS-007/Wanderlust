@@ -6,11 +6,10 @@ const Review = require("./review.js")
 const listingSchema=new Schema({
     title:{type:String,required:true,},
     description:String,
-    image:{filename:String,
-        url:{
-            type:String,
-         default:"https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?_gl=1*qy9g3a*_ga*MTYzMjQyMDI3NS4xNzUwMzgzNjQ4*_ga_8JE65Q40S6*czE3NTAzODM2NDgkbzEkZzEkdDE3NTAzODM2NTEkajU3JGwwJGgw",       
-        set:(v)=>v===""?"https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?_gl=1*qy9g3a*_ga*MTYzMjQyMDI3NS4xNzUwMzgzNjQ4*_ga_8JE65Q40S6*czE3NTAzODM2NDgkbzEkZzEkdDE3NTAzODM2NTEkajU3JGwwJGgw":v,},},
+    image:{
+        url: String,
+        fileName: String,
+    },
     location:String,
     country:String,
     price:Number,
@@ -22,17 +21,17 @@ const listingSchema=new Schema({
         type: Schema.Types.ObjectId,
         ref:"User",
     },
-     geometry: {
-    type: {
-      type: String, // e.g., "Point"
-      enum: ['Point'],
-      required: true
-    },
-    coordinates: {
-      type: [Number], // [longitude, latitude]
-      required: true
-    }
-  },
+  //    geometry: {
+  //   type: {
+  //     type: String, // e.g., "Point"
+  //     enum: ['Point'],
+  //     required: true
+  //   },
+  //   coordinates: {
+  //     type: [Number], // [longitude, latitude]
+  //     required: true
+  //   }
+  // },
 
 
 
