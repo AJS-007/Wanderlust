@@ -1,0 +1,180 @@
+body{
+     font-family: "Plus Jakarta Sans", sans-serif !important;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+.container{
+   flex: 1; 
+}
+/* navbar */
+.navbar{
+    height:5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color:#fe424d;
+    font-size:2rem;
+}
+
+.nav-link{
+    color:#111111 !important;
+}
+/* footer */
+/* Social Media Hover Effects */
+.social-link {
+    color: #333;
+    transition: color 0.3s;
+}
+/* Facebook hover */
+.social-link[href*="facebook"]:hover {
+    color: #1877F2; /* Facebook Blue */
+}
+
+/* Instagram hover */
+.social-link[href*="instagram"]:hover {
+    color: #972bb2; /* Instagram Pinkish */
+}
+
+/* LinkedIn hover */
+.social-link[href*="linkedin"]:hover {
+    color: #417ef7; /* LinkedIn Blue */
+}
+
+/* Footer Link Hover Effects */
+.footer-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+.footer-link:hover {
+    color: #fe424d;
+    text-decoration: underline;
+}
+
+/* Optional: Footer Brand Styling */
+.footer-brand {
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    color: #444;
+}
+
+/* cards */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
+.card-body{
+    padding: 0 !important;
+} 
+
+.card-text p{
+    font-weight: 400  !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+/* card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.3;
+    background-color: white ;
+}
+/* new page */
+.add-btn{
+    background-color:#fe424d !important;
+    border: none !important;
+}
+/* edit page */
+.edit-btn{
+   background-color:#fe424d !important;
+    border: none !important; 
+}
+/* show page */
+
+/* Image Styling */
+.show-img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Card Styling */
+.show-card {
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Buttons */
+.show-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects */
+.show-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Group Button Styling */
+.show-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsive: Stack buttons on small screens */
+@media (max-width: 576px) {
+  .show-buttons {
+    flex-direction: column;
+  }
+
+  .show-btn {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* for read more option  fade-in/fade-out animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+}
+
+/* Map container styles */
+.custom-map {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-top: 1rem;
+}
+
+/* Make sure map doesn't overflow mobile */
+@media (max-width: 576px) {
+  .custom-map {
+    height: 300px;
+  }
+}
+
+
